@@ -1,0 +1,28 @@
+/* Scss Document 
+I meay need to watch the source videos again!!!!!
+*/
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar {
+	padding: .5em 1.4em 1em;
+	background: hsl(0, 0%, 90%);
+}
+
+
+/* Flexbox stuff */
+
+@media screen and (min-width: $desktop-viewport) {
+	.content {
+		flex-direction: row;
+	}
+	.main-area {
+		flex: 1 1 auto;
+	}
+	.sidebar {
+		flex: 0 0 12em;
+	}
+}

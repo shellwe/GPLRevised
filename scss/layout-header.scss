@@ -1,0 +1,65 @@
+/* Styles for Single Level Menu */
+
+.header {
+	.main-navigation {
+		/* Base styles that apply to all menus */
+		padding-bottom: 2em;
+		//margin-bottom: 2em;
+		//border-bottom: 1px solid hsl(0, 0%, 0%);
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			background: hsl(0, 0%, 15%);
+		}
+		li a {
+			display: block;
+			text-decoration: none;
+			color: white;
+			padding: .6em 1em;
+			text-align: center;
+		}
+		li a:hover {
+			background: hsl(0, 0%, 25%);
+		}
+	}
+}
+
+@media screen and (max-width: $mobile-viewport) {
+	.header {
+		.logo {
+			display: block;
+			width: 100%;
+			height:auto;
+		}
+		.main-navigation {
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				li {
+					width: 50%
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $desktop-viewport) {
+	.header {
+		.logo {
+			display: none;
+		}
+		.main-navigation {
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			li {
+				flex: 1 0 auto;
+				text-align: center;
+			}
+		}
+	}
+}
