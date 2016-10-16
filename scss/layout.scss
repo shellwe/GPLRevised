@@ -1,12 +1,25 @@
+
 /* Scss Document */
 
 .container {
 	display: flex;
 	flex-direction: column;
+}
+#header, #content, #footer {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
+@media screen and (max-width: $mobile-viewport) {
+ #header,  #content,  #footer {
+ width: 100%;
+}
+}
+@media screen and (min-width: $desktop-viewport) {
+ #header,  #content,  #footer {
+ 	min-width: 768px;
+	width:100%; 
+}
+}
 @import "layout-header";
 @import "layout-content";
 @import "layout-footer";

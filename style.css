@@ -375,8 +375,8 @@ textarea {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("/fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -2562,8 +2562,8 @@ textarea {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("/fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -4751,60 +4751,96 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif; }
 
+/* Use the following CSS code if you want to have a class per icon */
+.content ul {
+  padding-left: 20px;
+  list-style: none; }
+  .content ul li {
+    margin-bottom: 10px; }
+    .content ul li:before {
+      font-family: 'FontAwesome';
+      content: '\f06c';
+      margin: 0 5px 0 -15px;
+      color: forestgreen; }
+
 /* Scss Document */
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; }
+
+#header, #content, #footer {
   max-width: 1200px;
   margin: 0 auto; }
 
+@media screen and (max-width: 767px) {
+  #header, #content, #footer {
+    width: 100%; } }
+@media screen and (min-width: 768px) {
+  #header, #content, #footer {
+    min-width: 768px;
+    width: 100%; } }
 /* Styles for Single Level Menu */
-.header .main-navigation {
+#header .main-navigation {
   /* Base styles that apply to all menus */
   padding-bottom: 2em; }
-  .header .main-navigation ul {
+  #header .main-navigation ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     background: #262626; }
-  .header .main-navigation li a {
+  #header .main-navigation li a {
     display: block;
     text-decoration: none;
     color: white;
     padding: .6em 1em;
     text-align: center; }
-  .header .main-navigation li a:hover {
-    background: #404040; }
+    #header .main-navigation li a:hover {
+      background: #404040; }
+      #header .main-navigation li a:hover:after {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "\00a0 \f06c \00a0"; }
+      #header .main-navigation li a:hover:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: "\00a0 \f06c \00a0"; }
+#header .hamburger-menu {
+  display: none; }
 
 @media screen and (max-width: 767px) {
-  .header .logo {
+  #header .logo {
     display: block;
     width: 100%;
     height: auto; }
-  .header .main-navigation ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .header .main-navigation ul li {
-      width: 50%; } }
-@media screen and (min-width: 768px) {
-  .header .logo {
+  #header .main-navigation {
     display: none; }
-  .header .main-navigation ul {
+    #header .main-navigation ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #header .main-navigation ul li {
+        width: 50%; }
+  #header .hamburger-menu {
+    display: inline-block;
+    margin-left: auto; } }
+@media screen and (min-width: 768px) {
+  #header .logo {
+    display: none; }
+  #header .main-navigation ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-  .header .main-navigation li {
+  #header .main-navigation li {
     flex: 1 0 auto;
     text-align: center; } }
 /* Scss Document 
 I meay need to watch the source videos again!!!!!
 */
-.content {
+#content {
   display: flex;
   flex-direction: column; }
 
-.sidebar {
+#main-content #sidebar {
   padding: .5em 1.4em 1em;
   background: #e6e6e6; }
 
@@ -4813,10 +4849,10 @@ I meay need to watch the source videos again!!!!!
   .content {
     flex-direction: row; }
 
-  .main-area {
+  #main-content {
     flex: 1 1 auto; }
 
-  .sidebar {
+  #sidebar {
     flex: 0 0 12em; } }
 /* Scss Document */
 /* Scss Document */

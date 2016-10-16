@@ -14,3 +14,22 @@ h5,
 h6 {
 	font-family: 'Montserrat', sans-serif;
 }
+
+
+/* Use the following CSS code if you want to have a class per icon */
+
+.content {
+	ul {
+		padding-left: 20px;
+		list-style: none;
+		li {
+			margin-bottom: 10px;
+			&:before {
+				font-family: 'FontAwesome';
+				content: '\f06c';
+				margin: 0 5px 0 -15px;
+				color: $green;
+			}
+		}
+	}
+}

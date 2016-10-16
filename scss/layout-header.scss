@@ -1,6 +1,6 @@
 /* Styles for Single Level Menu */
 
-.header {
+#header {
 	.main-navigation {
 		/* Base styles that apply to all menus */
 		padding-bottom: 2em;
@@ -18,21 +18,35 @@
 			color: white;
 			padding: .6em 1em;
 			text-align: center;
+			&:hover {
+				background: hsl(0, 0%, 25%);
+				&:after {
+					display: inline-block;
+					font-family: FontAwesome;
+					content: "\00a0 \f06c \00a0";
+				}
+				&:before {
+					display: inline-block;
+					font-family: FontAwesome;
+					content: "\00a0 \f06c \00a0";
+				}
+			}
 		}
-		li a:hover {
-			background: hsl(0, 0%, 25%);
-		}
+	}
+	.hamburger-menu {
+		display: none;
 	}
 }
 
 @media screen and (max-width: $mobile-viewport) {
-	.header {
+	#header {
 		.logo {
 			display: block;
 			width: 100%;
-			height:auto;
+			height: auto;
 		}
 		.main-navigation {
+			display: none;
 			ul {
 				display: flex;
 				flex-wrap: wrap;
@@ -42,11 +56,15 @@
 				}
 			}
 		}
+		.hamburger-menu {
+			display: inline-block;
+			margin-left: auto;
+		}
 	}
 }
 
 @media screen and (min-width: $desktop-viewport) {
-	.header {
+	#header {
 		.logo {
 			display: none;
 		}

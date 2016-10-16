@@ -2,12 +2,12 @@
 I meay need to watch the source videos again!!!!!
 */
 
-.content {
+#content {
 	display: flex;
 	flex-direction: column;
 }
 
-.sidebar {
+#main-content #sidebar {
 	padding: .5em 1.4em 1em;
 	background: hsl(0, 0%, 90%);
 }
@@ -19,10 +19,10 @@ I meay need to watch the source videos again!!!!!
 	.content {
 		flex-direction: row;
 	}
-	.main-area {
+	#main-content {
 		flex: 1 1 auto;
 	}
-	.sidebar {
+	#sidebar {
 		flex: 0 0 12em;
 	}
 }
