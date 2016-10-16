@@ -4,19 +4,20 @@
 .container {
 	display: flex;
 	flex-direction: column;
+	padding-top: .5rem;
 }
 #header, #content, #footer {
-	max-width: 1200px;
+	width: 100%;
+	max-width: $max-desktop-viewport;
 	margin: 0 auto;
 }
 @media screen and (max-width: $mobile-viewport) {
  #header,  #content,  #footer {
- width: 100%;
 }
 }
 @media screen and (min-width: $desktop-viewport) {
  #header,  #content,  #footer {
- 	min-width: 768px;
+ 	min-width: $desktop-viewport;
 	width:100%; 
 }
 }

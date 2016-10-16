@@ -1,7 +1,8 @@
 /* Scss Document */
 
 @import "fontawesome/font-awesome";
-@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+//@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Montserrat&effect=grass';
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -13,6 +14,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Montserrat', sans-serif;
+	color: $green;
 }
 
 
