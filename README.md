@@ -8,6 +8,14 @@ transition: all 3s ease;
 aldo fade it back when you unhover
 https://css-tricks.com/different-transitions-for-hover-on-hover-off/
 
+
+
+adding in code to do check for mobile:
+http://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
+Be sure to wrap it in an isMobile exits if statement so it doesn't get called on every page load
+if (null == isMobile)
+
+
 //Use this to get google analytics
 
 function google_analytics() { ?>
