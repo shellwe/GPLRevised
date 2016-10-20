@@ -4765,7 +4765,7 @@ h6 {
       color: forestgreen; }
 
 /* Scss Document */
-.container {
+#container {
   display: flex;
   flex-direction: column;
   padding-top: .5rem; }
@@ -4775,10 +4775,17 @@ h6 {
   max-width: 1200px;
   margin: 0 auto; }
 
+.capsule {
+  width: auto;
+  margin: auto; }
+
 @media screen and (min-width: 768px) {
   #header, #content, #footer {
     min-width: 768px;
     width: 100%; } }
+@media screen and (min-width: 1200px) {
+  .capsule {
+    max-width: 1200px; } }
 /* Styles for Single Level Menu */
 #header .main-navigation {
   /* Base styles that apply to all menus */
@@ -4793,7 +4800,7 @@ h6 {
     display: block;
     text-decoration: none;
     color: forestgreen;
-    padding: .3em 1em;
+    padding: .3em .9em;
     text-align: center; }
     #header .main-navigation li a:hover {
       border-top: thin solid forestgreen;
@@ -4801,16 +4808,14 @@ h6 {
       #header .main-navigation li a:hover:before {
         display: inline-block;
         font-family: FontAwesome;
-        content: "\00a0 \f06c \00a0"; }
+        content: "\00a0 \f06c \00a0";
+        transform: rotateY(180deg);
+        opacity: .8; }
       #header .main-navigation li a:hover:after {
         display: inline-block;
         font-family: FontAwesome;
         content: "\00a0 \f06c \00a0";
-        -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-        -o-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
-        transform: rotateY(180deg); }
+        opacity: .8; }
 #header .hamburger-menu {
   display: none; }
 
@@ -4845,21 +4850,21 @@ h6 {
     display: inline-block;
     font-family: FontAwesome;
     content: "\00a0 \f06c \00a0";
-    color: transparent; }
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: all 1s ease; }
   #header .main-navigation li a:after {
     display: inline-block;
     font-family: FontAwesome;
     content: "\00a0 \f06c \00a0";
-    color: transparent;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    transform: rotateY(180deg); }
+    opacity: 0;
+    transition: all 1s ease; }
   #header .main-navigation li a:hover:after {
-    color: forestgreen; }
+    opacity: .8;
+    transition: all 1s ease; }
   #header .main-navigation li a:hover:before {
-    color: forestgreen; } }
+    opacity: .8;
+    transition: all 1s ease; } }
 /* Scss Document 
 I meay need to watch the source videos again!!!!!
 */

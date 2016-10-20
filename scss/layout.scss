@@ -1,7 +1,7 @@
 
 /* Scss Document */
 
-.container {
+#container {
 	display: flex;
 	flex-direction: column;
 	padding-top: .5rem;
@@ -11,15 +11,24 @@
 	max-width: $max-desktop-viewport;
 	margin: 0 auto;
 }
-@media screen and (max-width: $mobile-viewport) {
- #header,  #content,  #footer {
+.capsule{
+	width:auto;
+	margin: auto;
 }
+@media screen and (max-width: $mobile-viewport) {
+	 #header,  #content,  #footer {
+	}
 }
 @media screen and (min-width: $desktop-viewport) {
- #header,  #content,  #footer {
- 	min-width: $desktop-viewport;
-	width:100%; 
+	 #header,  #content,  #footer {
+		min-width: $desktop-viewport;
+		width:100%; 
+	}
 }
+@media screen and (min-width: $max-desktop-viewport) {
+	.capsule{
+		max-width: $max-desktop-viewport;
+	}
 }
 @import "layout-header";
 @import "layout-content";
