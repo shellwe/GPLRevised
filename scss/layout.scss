@@ -1,7 +1,7 @@
 
 /* Scss Document */
 
-#container {
+#capsule {
 	display: flex;
 	flex-direction: column;
 	padding-top: .5rem;
@@ -11,7 +11,7 @@
 	max-width: $max-desktop-viewport;
 	margin: 0 auto;
 }
-.capsule{
+.container{
 	width:auto;
 	margin: auto;
 }
@@ -26,7 +26,7 @@
 	}
 }
 @media screen and (min-width: $max-desktop-viewport) {
-	.capsule{
+	.container{
 		max-width: $max-desktop-viewport;
 	}
 }
