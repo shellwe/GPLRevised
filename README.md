@@ -2,13 +2,8 @@
 
 http://themedemos.dottoro.com/features/menu/horizontal-submenu/
 
-fade in leaves for menu over .25 seconds with opacity set to 0 (instead of alpha before and set to .8 after so its not so blunt
-opacity: 0.25;
-transition: all 3s ease;
-aldo fade it back when you unhover
-https://css-tricks.com/different-transitions-for-hover-on-hover-off/
-
-
+Use this for mobile font
+https://css-tricks.com/viewport-sized-typography/
 
 adding in code to do check for mobile:
 http://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
