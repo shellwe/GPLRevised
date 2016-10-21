@@ -7,6 +7,9 @@ https://css-tricks.com/viewport-sized-typography/
 
 Alternatively, you could just add a minimum width to the a tag in mobile so if it goes below a certain size it will wrap around to 1 wide.
 
+Yes another idea for the toggle to work:
+http://stackoverflow.com/questions/28101797/jquery-slidetoggle-with-css-media-query
+
 adding in code to do check for mobile:
 http://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 Be sure to wrap it in an isMobile exits if statement so it doesn't get called on every page load
