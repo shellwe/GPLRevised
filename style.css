@@ -4787,6 +4787,9 @@ h6 {
   .container {
     max-width: 1200px; } }
 /* Styles for Single Level Menu */
+#header .logo img {
+  width: 100%;
+  height: auto; }
 #header #hamburger-menu {
   display: none; }
 #header .main-navigation {
@@ -4831,8 +4834,7 @@ h6 {
 @media screen and (max-width: 767px) {
   #header .logo {
     display: inline-block;
-    width: 100%;
-    height: auto; }
+    width: 50%; }
   #header #hamburger-menu {
     display: inline-block;
     margin-left: auto;
@@ -4859,7 +4861,11 @@ h6 {
   #header .toggle-menu {
     display: none; } }
 @media screen and (min-width: 768px) {
-  #header .main-navigation .logo {
+  #header .logo {
+    margin: auto;
+    width: 25%;
+    padding: .25rem; }
+  #header .main-navigation .mobile-search {
     display: none; }
   #header .main-navigation ul {
     display: flex;

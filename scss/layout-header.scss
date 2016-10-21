@@ -1,6 +1,12 @@
 /* Styles for Single Level Menu */
 
 #header {
+	.logo{
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
 	#hamburger-menu {
 		display: none;
 	}
@@ -59,8 +65,7 @@
 	#header {
 		.logo {
 			display: inline-block;
-			width: 100%;
-			height: auto;
+			width: 50%;
 		}
 		#hamburger-menu {
 			display: inline-block;
@@ -100,8 +105,13 @@
 
 @media screen and (min-width: $desktop-viewport) {
 	#header {
+		.logo {
+			margin: auto;
+			width: 25%;
+			padding: .25rem;
+		}
 		.main-navigation {
-			.logo {
+			.mobile-search{
 				display: none;
 			}
 			ul {
