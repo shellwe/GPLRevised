@@ -15,6 +15,11 @@ http://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 Be sure to wrap it in an isMobile exits if statement so it doesn't get called on every page load
 if (null == isMobile)
 
+Maybe use this for search? I like how it expands to fill space, which I would want to set a max width for the div
+http://tympanus.net/Tutorials/ExpandingSearchBar/
+
+Here is info on how to style a search bar (uses font awesome)
+https://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069
 
 //Use this to get google analytics
 
