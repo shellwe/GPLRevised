@@ -38,3 +38,6 @@ jspm_packages
 
 # Dreamweaver files
 dwsync.xml
+
+# Sass cache
+.sass-cache
