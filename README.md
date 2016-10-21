@@ -5,6 +5,8 @@ http://themedemos.dottoro.com/features/menu/horizontal-submenu/
 Use this for mobile font
 https://css-tricks.com/viewport-sized-typography/
 
+Alternatively, you could just add a minimum width to the a tag in mobile so if it goes below a certain size it will wrap around to 1 wide.
+
 adding in code to do check for mobile:
 http://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 Be sure to wrap it in an isMobile exits if statement so it doesn't get called on every page load
