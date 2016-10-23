@@ -5,6 +5,7 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans|Montserrat&effect=grass';
 body {
 	font-family: 'Open Sans', sans-serif;
+	color: darken( $green, 75% );
 }
 
 h1,
@@ -15,6 +16,15 @@ h5,
 h6 {
 	font-family: 'Montserrat', sans-serif;
 	color: $green;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	margin: .5rem 0;
+	font-size: 1.25rem;
 }
 
 

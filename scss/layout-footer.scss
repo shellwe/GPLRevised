@@ -1,1 +1,29 @@
 /* Scss Document */
+
+#footer {
+	border-top: $green medium inset;
+	background-color: $green;
+	color: lighten( $green, 75%);
+	font-size: 2rem;
+	.fa {
+		padding: .5rem;
+	}	
+	a{
+		color: lighten( $green, 75%);
+		text-shadow: 2px 2px 4px black;
+		text-decoration: none;
+	}
+	.telephone {
+		float:left;
+	}
+	.social-media {
+		text-align: right;
+	}
+}
+@media screen and (max-width: $mobile-viewport) {
+	#footer {
+		.social-media,.telephone{
+			text-align: center;
+		}
+	}
+}

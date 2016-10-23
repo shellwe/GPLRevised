@@ -4741,7 +4741,8 @@ textarea {
   clip: auto; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: black; }
 
 h1,
 h2,
@@ -4750,7 +4751,14 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
-  color: forestgreen; }
+  color: #228B22; }
+
+h1 {
+  font-size: 1.5rem; }
+
+h2 {
+  margin: .5rem 0;
+  font-size: 1.25rem; }
 
 /* Use the following CSS code if you want to have a class per icon */
 .content ul {
@@ -4762,7 +4770,7 @@ h6 {
       font-family: 'FontAwesome';
       content: '\f06c';
       margin: 0 5px 0 -15px;
-      color: forestgreen; }
+      color: #228B22; }
 
 /* Scss Document */
 #capsule {
@@ -4770,27 +4778,28 @@ h6 {
   flex-direction: column;
   padding-top: .5rem; }
 
-#header, #content, #footer {
+#header,
+#content,
+#footer {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto; }
 
 .container {
   width: auto;
-  margin: auto; }
+  margin: auto;
+  max-width: 1200px; }
 
 @media screen and (min-width: 768px) {
-  #header, #content, #footer {
+  #header,
+  #content,
+  #footer {
     min-width: 768px;
     width: 100%; } }
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px; } }
 /* Styles for Single Level Menu */
 #header .logo img {
   width: 100%;
   height: auto; }
-#header #hamburger-menu {
+#header #header-icons {
   display: none; }
 #header .main-navigation {
   /* Base styles that apply to all menus */
@@ -4805,7 +4814,7 @@ h6 {
       border-bottom: thin solid #CCC;
       display: block;
       text-decoration: none;
-      color: forestgreen;
+      color: #228B22;
       padding: .3rem 0;
       text-align: center; }
       #header .main-navigation ul li a:before {
@@ -4822,8 +4831,8 @@ h6 {
         opacity: 0;
         transition: opacity 1s ease; }
       #header .main-navigation ul li a:hover {
-        border-top: thin solid forestgreen;
-        border-bottom: thin solid forestgreen; }
+        border-top: thin solid #228B22;
+        border-bottom: thin solid #228B22; }
         #header .main-navigation ul li a:hover:after {
           opacity: .8;
           transition: opacity 1s ease; }
@@ -4835,14 +4844,20 @@ h6 {
   #header .logo {
     display: inline-block;
     width: 50%; }
-  #header #hamburger-menu {
+  #header #header-icons {
     display: inline-block;
     margin-left: auto;
-    padding: .5rem;
     float: right;
-    font-size: 1.5rem; }
+    font-size: 2rem;
+    color: #228B22; }
+    #header #header-icons i {
+      padding: .75rem; }
+    #header #header-icons a {
+      color: #228B22; }
   #header .main-navigation {
     clear: both; }
+    #header .main-navigation .mobile-search .search-submit {
+      font-family: FontAwesome; }
     #header .main-navigation ul {
       display: flex;
       flex-direction: row;
@@ -4851,7 +4866,7 @@ h6 {
       #header .main-navigation ul li {
         width: 50%; }
         #header .main-navigation ul li a {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           border: thin solid #CCC;
           padding: .5rem 0; }
           #header .main-navigation ul li a:before {
@@ -4865,6 +4880,9 @@ h6 {
     margin: auto;
     width: 25%;
     padding: .25rem; }
+  #header .testing {
+    float: right;
+    display: inline-block; }
   #header .main-navigation .mobile-search {
     display: none; }
   #header .main-navigation ul {
@@ -4874,6 +4892,9 @@ h6 {
     #header .main-navigation ul li {
       flex: 1 0 auto;
       text-align: center; } }
+@media screen and (min-width: 1200px) {
+  #header .main-navigation ul {
+    font-size: 1rem; } }
 /* Scss Document 
 I meay need to watch the source videos again!!!!!
 */
@@ -4896,6 +4917,25 @@ I meay need to watch the source videos again!!!!!
   #sidebar {
     flex: 0 0 12em; } }
 /* Scss Document */
+#footer {
+  border-top: #228B22 medium inset;
+  background-color: #228B22;
+  color: white;
+  font-size: 2rem; }
+  #footer .fa {
+    padding: .5rem; }
+  #footer a {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-decoration: none; }
+  #footer .telephone {
+    float: left; }
+  #footer .social-media {
+    text-align: right; }
+
+@media screen and (max-width: 767px) {
+  #footer .social-media, #footer .telephone {
+    text-align: center; } }
 /* Scss Document */
 .card {
   background: white;

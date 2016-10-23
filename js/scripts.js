@@ -1,4 +1,4 @@
 // JavaScript Document
-$( "#hamburger-menu" ).click(function() {
+$( "#header .fa-bars" ).click(function() {
   $( ".main-navigation" ).toggleClass( "toggle-menu" );
 });

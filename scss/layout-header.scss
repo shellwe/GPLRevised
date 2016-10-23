@@ -1,13 +1,13 @@
 /* Styles for Single Level Menu */
 
 #header {
-	.logo{
-		img{
+	.logo {
+		img {
 			width: 100%;
 			height: auto;
 		}
 	}
-	#hamburger-menu {
+	#header-icons {
 		display: none;
 	}
 	.main-navigation {
@@ -31,7 +31,7 @@
 						display: inline-block;
 						font-family: FontAwesome;
 						content: "\00a0 \f06c";
-						transform:rotateY(180deg);
+						transform: rotateY(180deg);
 						opacity: 0;
 						transition: opacity 1s ease;
 					}
@@ -41,7 +41,6 @@
 						content: "\00a0 \f06c";
 						opacity: 0;
 						transition: opacity 1s ease;
-
 					}
 					&:hover {
 						border-top: thin solid $green;
@@ -54,7 +53,7 @@
 							opacity: .8;
 							transition: opacity 1s ease;
 						}
-					}				
+					}
 				}
 			}
 		}
@@ -67,15 +66,26 @@
 			display: inline-block;
 			width: 50%;
 		}
-		#hamburger-menu {
+		#header-icons {
 			display: inline-block;
 			margin-left: auto;
-			padding: .5rem;
-			float:right;
-			font-size: 1.5rem;
+			float: right;
+			font-size: 2rem;
+			color: $green;
+			i {
+				padding: .75rem;
+			}
+			a{
+				color: $green;
+			}
 		}
 		.main-navigation {
-			clear:both;
+			clear: both;
+			.mobile-search {
+				.search-submit {
+					font-family: FontAwesome;
+				}
+			}
 			ul {
 				display: flex;
 				flex-direction: row;
@@ -83,8 +93,8 @@
 				justify-content: space-between;
 				li {
 					width: 50%;
-					a{
-						font-size:1.5rem;
+					a {
+						font-size: 1.2rem;
 						border: thin solid #CCC;
 						padding: .5rem 0;
 						&:before {
@@ -97,8 +107,8 @@
 				}
 			}
 		}
-		.toggle-menu{
-			display:none;
+		.toggle-menu {
+			display: none;
 		}
 	}
 }
@@ -110,8 +120,12 @@
 			width: 25%;
 			padding: .25rem;
 		}
+		.testing{
+			float: right;
+			display: inline-block;
+		}
 		.main-navigation {
-			.mobile-search{
+			.mobile-search {
 				display: none;
 			}
 			ul {
@@ -130,6 +144,9 @@
 @media screen and (min-width: $max-desktop-viewport) {
 	#header {
 		.main-navigation {
+			ul {
+				font-size: 1rem;
+			}
 		}
 	}
 }

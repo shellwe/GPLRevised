@@ -1,4 +1,3 @@
-
 /* Scss Document */
 
 #capsule {
@@ -6,30 +5,34 @@
 	flex-direction: column;
 	padding-top: .5rem;
 }
-#header, #content, #footer {
+
+#header,
+#content,
+#footer {
 	width: 100%;
-	max-width: $max-desktop-viewport;
 	margin: 0 auto;
 }
-.container{
-	width:auto;
+
+.container {
+	width: auto;
 	margin: auto;
+	max-width: $max-desktop-viewport;
 }
+
 @media screen and (max-width: $mobile-viewport) {
-	 #header,  #content,  #footer {
-	}
 }
+
 @media screen and (min-width: $desktop-viewport) {
-	 #header,  #content,  #footer {
+	#header,
+	#content,
+	#footer {
 		min-width: $desktop-viewport;
-		width:100%; 
+		width: 100%;
 	}
 }
-@media screen and (min-width: $max-desktop-viewport) {
-	.container{
-		max-width: $max-desktop-viewport;
-	}
-}
+
+@media screen and (min-width: $max-desktop-viewport) {}
+
 @import "layout-header";
 @import "layout-content";
 @import "layout-footer";
