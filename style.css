@@ -4802,8 +4802,7 @@ h2 {
 #header #header-icons-mobile {
   display: none; }
 #header .main-navigation {
-  /* Base styles that apply to all menus */
-  padding-bottom: 1rem; }
+  /* Base styles that apply to all menus */ }
   #header .main-navigation ul {
     list-style-type: none;
     padding: 0;
@@ -4885,8 +4884,19 @@ h2 {
     flex: 1 0 auto;
     text-align: center; } }
 @media screen and (min-width: 1200px) {
-  #header .main-navigation ul {
-    font-size: 1rem; } }
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center; }
+    #header .logo {
+      flex: 1 1 300px;
+      padding-right: 25px; }
+    #header .main-navigation {
+      flex: 1 1 900px;
+      align-self: center; }
+      #header .main-navigation ul {
+        font-size: 1rem; } }
 /* Scss Document 
 I meay need to watch the source videos again!!!!!
 */

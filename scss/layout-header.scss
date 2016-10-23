@@ -12,7 +12,6 @@
 	}
 	.main-navigation {
 		/* Base styles that apply to all menus */
-		padding-bottom: 1rem;
 		ul {
 			list-style-type: none;
 			padding: 0;
@@ -136,7 +135,17 @@
 
 @media screen and (min-width: $max-desktop-viewport) {
 	#header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		.logo{
+			flex: 1 1 300px;
+			padding-right: 25px;
+		}
 		.main-navigation {
+			flex: 1 1 900px;
+			align-self:center;
 			ul {
 				font-size: 1rem;
 			}
