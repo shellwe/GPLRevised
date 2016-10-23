@@ -4799,7 +4799,7 @@ h2 {
 #header .logo img {
   width: 100%;
   height: auto; }
-#header #header-icons {
+#header #header-icons-mobile {
   display: none; }
 #header .main-navigation {
   /* Base styles that apply to all menus */
@@ -4808,7 +4808,11 @@ h2 {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: .95rem; }
+    font-size: .95rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
     #header .main-navigation ul li a {
       border-top: thin solid #CCC;
       border-bottom: thin solid #CCC;
@@ -4844,35 +4848,30 @@ h2 {
   #header .logo {
     display: inline-block;
     width: 50%; }
-  #header #header-icons {
+  #header #header-icons-mobile {
     display: inline-block;
     margin-left: auto;
     float: right;
     font-size: 2rem;
     color: #228B22; }
-    #header #header-icons i {
+    #header #header-icons-mobile i {
       padding: .75rem; }
-    #header #header-icons a {
+    #header #header-icons-mobile a {
       color: #228B22; }
   #header .main-navigation {
     clear: both; }
     #header .main-navigation .mobile-search .search-submit {
       font-family: FontAwesome; }
-    #header .main-navigation ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-      #header .main-navigation ul li {
-        width: 50%; }
-        #header .main-navigation ul li a {
-          font-size: 1.2rem;
-          border: thin solid #CCC;
-          padding: .5rem 0; }
-          #header .main-navigation ul li a:before {
-            opacity: .8; }
-          #header .main-navigation ul li a:after {
-            opacity: .8; }
+    #header .main-navigation ul li {
+      width: 50%; }
+      #header .main-navigation ul li a {
+        font-size: 1.2rem;
+        border: thin solid #CCC;
+        padding: .5rem 0; }
+        #header .main-navigation ul li a:before {
+          opacity: .8; }
+        #header .main-navigation ul li a:after {
+          opacity: .8; }
   #header .toggle-menu {
     display: none; } }
 @media screen and (min-width: 768px) {
@@ -4880,18 +4879,11 @@ h2 {
     margin: auto;
     width: 25%;
     padding: .25rem; }
-  #header .testing {
-    float: right;
-    display: inline-block; }
-  #header .main-navigation .mobile-search {
+  #header #header-icons-mobile {
     display: none; }
-  #header .main-navigation ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    #header .main-navigation ul li {
-      flex: 1 0 auto;
-      text-align: center; } }
+  #header .main-navigation ul li {
+    flex: 1 0 auto;
+    text-align: center; } }
 @media screen and (min-width: 1200px) {
   #header .main-navigation ul {
     font-size: 1rem; } }
@@ -4935,7 +4927,8 @@ I meay need to watch the source videos again!!!!!
 
 @media screen and (max-width: 767px) {
   #footer .social-media, #footer .telephone {
-    text-align: center; } }
+    text-align: center;
+    display: inline-block; } }
 /* Scss Document */
 .card {
   background: white;
