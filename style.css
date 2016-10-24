@@ -4898,26 +4898,33 @@ h2 {
       #header .main-navigation ul {
         font-size: 1rem; } }
 /* Scss Document 
-I meay need to watch the source videos again!!!!!
 */
 #content {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: .5rem; }
+  #content #banner {
+    margin: 0 -1rem; }
 
-#main-content #sidebar {
-  padding: .5em 1.4em 1em;
-  background: #e6e6e6; }
+#testimonials .customer-name {
+  display: inline-block; }
+#testimonials .customer-rating {
+  display: inline-block; }
+  #testimonials .customer-rating .fa-star i {
+    -webkit-text-stroke: 1px #ffd700;
+    color: white;
+    text-shadow: 3px 3px 0 #ffd700, -1px -1px 0 #ffd700,   1px -1px 0 #ffd700, -1px 1px 0 #ffd700, 1px 1px 0 #ffd700;
+    display: none; }
+  #testimonials .customer-rating .fa-star .filled {
+    color: #ffd700; }
 
-/* Flexbox stuff */
 @media screen and (min-width: 768px) {
   .content {
     flex-direction: row; }
 
-  #main-content {
-    flex: 1 1 auto; }
-
-  #sidebar {
-    flex: 0 0 12em; } }
+  #-content {
+    flex: 1 1 auto; } }
 /* Scss Document */
 #footer {
   border-top: #228B22 medium inset;

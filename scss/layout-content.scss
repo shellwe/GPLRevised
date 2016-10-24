@@ -1,28 +1,49 @@
 /* Scss Document 
-I meay need to watch the source videos again!!!!!
 */
 
 #content {
 	display: flex;
 	flex-direction: column;
+	padding: 1rem;
+	margin-top: .5rem;
+	#banner{
+		margin: 0 -1rem;
+	}
+}
+#testimonials{
+	.customer-name{
+		display: inline-block;
+	}
+	.customer-rating{
+		display: inline-block;
+		.fa-star{
+			i{
+				-webkit-text-stroke: 1px #ffd700;
+				color: white;
+				text-shadow:
+					3px 3px 0 #ffd700,
+					-1px -1px 0 #ffd700,  
+					1px -1px 0 #ffd700,
+					-1px 1px 0 #ffd700,
+					1px 1px 0 #ffd700;
+					display: none;
+			}
+			.filled{
+				color: #ffd700
+			}
+		}
+	}
 }
 
-#main-content #sidebar {
-	padding: .5em 1.4em 1em;
-	background: hsl(0, 0%, 90%);
+@media screen and (max-width: $mobile-viewport) {
+
 }
-
-
-/* Flexbox stuff */
 
 @media screen and (min-width: $desktop-viewport) {
 	.content {
 		flex-direction: row;
 	}
-	#main-content {
+	#-content {
 		flex: 1 1 auto;
-	}
-	#sidebar {
-		flex: 0 0 12em;
 	}
 }
