@@ -1,18 +1,19 @@
 /* Scss Document 
 */
-
 #content {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
 	margin-top: .5rem;
 	#banner{
-		margin: 0 -1rem;
+		//margin: 0 -1rem;
+		display: none;
 	}
 }
-#testimonials{
+.testimonials{
 	.customer-name{
 		display: inline-block;
+		color:red;
 	}
 	.customer-rating{
 		display: inline-block;
@@ -29,7 +30,10 @@
 					display: none;
 			}
 			.filled{
-				color: #ffd700
+				i{
+					color: #ffd700;
+				}
+				
 			}
 		}
 	}
