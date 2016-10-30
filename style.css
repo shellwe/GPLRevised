@@ -369,7 +369,7 @@ textarea {
 /* Scss Document */
 body {
   font-family: 'Open Sans', sans-serif;
-  color: black; }
+  color: #371110; }
 
 h1,
 h2,
@@ -408,7 +408,7 @@ h2 {
 #header,
 #content,
 #footer {
-  width: 100%;
+  width: auto;
   margin: 0 auto; }
 
 .container {
@@ -531,20 +531,22 @@ h2 {
   flex-direction: column;
   padding: 1rem;
   margin-top: .5rem; }
-  #content #banner {
-    display: none; }
+  #content #banner img {
+    width: 100%;
+    height: auto; }
 
 .testimonials .review {
-  border-bottom: thin solid #228B22;
-  padding-bottom: .5rem; }
+  border-bottom: thin solid #A0420D;
+  padding: 2rem 0; }
   .testimonials .review .customer-name {
     display: inline-block;
     border-right: thin solid #228B22;
-    padding: 0 .25rem; }
+    padding: 0 .25rem;
+    font-weight: bold; }
   .testimonials .review .customer-rating {
     display: inline-block;
     border-right: thin solid #228B22;
-    padding: 0 .25rem; }
+    padding: 0 1rem; }
     .testimonials .review .customer-rating .fa-star {
       -webkit-text-stroke: 1px rgba(255, 215, 0, 0.5);
       color: white;
@@ -557,7 +559,7 @@ h2 {
     color: #228B22;
     font-size: 1.5rem; }
   .testimonials .review .customer-description {
-    padding: 1rem;
+    padding: 2rem;
     font-style: italic; }
     .testimonials .review .customer-description p {
       margin: 0; }

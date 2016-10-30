@@ -6,23 +6,33 @@
 	padding: 1rem;
 	margin-top: .5rem;
 	#banner{
-		//margin: 0 -1rem;
-		display: none;
+		img{
+			width:100%;
+			height: auto;
+		}
+	}
+}
+@media screen and (min-width: $desktop-viewport) {
+#content {
+	#banner{	
+			//margin: 0 -1rem;
+		}
 	}
 }
 .testimonials{
 	.review{
-		border-bottom: thin solid $green;
-		padding-bottom: .5rem;
+		border-bottom: thin solid $red;
+		padding: 2rem 0;
 		.customer-name{
 			display: inline-block;
 			border-right: thin solid $green;
 			padding: 0 .25rem;
+			font-weight: bold;
 		}
 		.customer-rating{
 			display: inline-block;
 			border-right: thin solid $green;
-			padding: 0 .25rem;
+			padding: 0 1rem;
 			.fa-star{
 				-webkit-text-stroke: 1px rgba(255, 215, 0, 0.5);
 				color: white;
@@ -44,7 +54,7 @@
 			font-size: 1.5rem;
 		}
 		.customer-description{
-			padding: 1rem;
+			padding: 2rem;
 			font-style: italic;
 			p{
 				margin: 0;
@@ -73,10 +83,6 @@
 			}
 		}		
 	}
-}
-
-@media screen and (max-width: $mobile-viewport) {
-
 }
 
 @media screen and (min-width: $desktop-viewport) {

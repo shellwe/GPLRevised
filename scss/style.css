@@ -167,23 +167,23 @@ textarea { overflow: auto; }
 
 /* Scss Document */
 /* line 6, typography.scss */
-body { font-family: 'Open Sans', sans-serif; color: black; }
+body { font-family: 'Open Sans', sans-serif; color: #371110; }
 
-/* line 11, typography.scss */
+/* line 12, typography.scss */
 h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; color: #228B22; }
 
-/* line 21, typography.scss */
+/* line 22, typography.scss */
 h1 { font-size: 1.5rem; }
 
-/* line 25, typography.scss */
+/* line 26, typography.scss */
 h2 { margin: .5rem 0; font-size: 1.25rem; }
 
 /* Use the following CSS code if you want to have a class per icon */
-/* line 34, typography.scss */
+/* line 35, typography.scss */
 .content ul { padding-left: 20px; list-style: none; }
-/* line 37, typography.scss */
+/* line 38, typography.scss */
 .content ul li { margin-bottom: 10px; }
-/* line 39, typography.scss */
+/* line 40, typography.scss */
 .content ul li:before { font-family: 'FontAwesome'; content: '\f06c'; margin: 0 5px 0 -15px; color: #228B22; }
 
 /* Scss Document */
@@ -191,7 +191,7 @@ h2 { margin: .5rem 0; font-size: 1.25rem; }
 #capsule { display: flex; flex-direction: column; padding-top: .5rem; }
 
 /* line 9, layout.scss */
-#header, #content, #footer { width: 100%; margin: 0 auto; }
+#header, #content, #footer { width: auto; margin: 0 auto; }
 
 /* line 16, layout.scss */
 .container { width: auto; margin: auto; max-width: 1200px; }
@@ -260,33 +260,33 @@ h2 { margin: .5rem 0; font-size: 1.25rem; }
 */
 /* line 3, layout-content.scss */
 #content { display: flex; flex-direction: column; padding: 1rem; margin-top: .5rem; }
-/* line 8, layout-content.scss */
-#content #banner { display: none; }
+/* line 9, layout-content.scss */
+#content #banner img { width: 100%; height: auto; }
 
-/* line 14, layout-content.scss */
-.testimonials .review { border-bottom: thin solid #228B22; padding-bottom: .5rem; }
-/* line 17, layout-content.scss */
-.testimonials .review .customer-name { display: inline-block; border-right: thin solid #228B22; padding: 0 .25rem; }
-/* line 22, layout-content.scss */
-.testimonials .review .customer-rating { display: inline-block; border-right: thin solid #228B22; padding: 0 .25rem; }
+/* line 23, layout-content.scss */
+.testimonials .review { border-bottom: thin solid #A0420D; padding: 2rem 0; }
 /* line 26, layout-content.scss */
-.testimonials .review .customer-rating .fa-star { -webkit-text-stroke: 1px rgba(255, 215, 0, 0.5); color: white; text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25), -1px -1px 0 rgba(255, 215, 0, 0.5), 1px -1px 0 rgba(255, 215, 0, 0.5), -1px 1px 0 rgba(255, 215, 0, 0.5), 1px 1px 0 rgba(255, 215, 0, 0.5); }
+.testimonials .review .customer-name { display: inline-block; border-right: thin solid #228B22; padding: 0 .25rem; font-weight: bold; }
+/* line 32, layout-content.scss */
+.testimonials .review .customer-rating { display: inline-block; border-right: thin solid #228B22; padding: 0 1rem; }
 /* line 36, layout-content.scss */
-.testimonials .review .customer-rating .filled { color: gold; }
-/* line 40, layout-content.scss */
-.testimonials .review .customer-source { display: inline-block; padding: 0 .25rem; color: #228B22; font-size: 1.5rem; }
+.testimonials .review .customer-rating .fa-star { -webkit-text-stroke: 1px rgba(255, 215, 0, 0.5); color: white; text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25), -1px -1px 0 rgba(255, 215, 0, 0.5), 1px -1px 0 rgba(255, 215, 0, 0.5), -1px 1px 0 rgba(255, 215, 0, 0.5), 1px 1px 0 rgba(255, 215, 0, 0.5); }
 /* line 46, layout-content.scss */
-.testimonials .review .customer-description { padding: 1rem; font-style: italic; }
-/* line 49, layout-content.scss */
+.testimonials .review .customer-rating .filled { color: gold; }
+/* line 50, layout-content.scss */
+.testimonials .review .customer-source { display: inline-block; padding: 0 .25rem; color: #228B22; font-size: 1.5rem; }
+/* line 56, layout-content.scss */
+.testimonials .review .customer-description { padding: 2rem; font-style: italic; }
+/* line 59, layout-content.scss */
 .testimonials .review .customer-description p { margin: 0; }
-/* line 52, layout-content.scss */
+/* line 62, layout-content.scss */
 .testimonials .review .customer-description p:first-child:before { display: inline-block; float: left; font-family: FontAwesome; content: "\f10d"; font-size: 1.25rem; color: #228B22; padding-right: .1rem; }
-/* line 63, layout-content.scss */
+/* line 73, layout-content.scss */
 .testimonials .review .customer-description p:last-child:after { display: inline-block; float: right; font-family: FontAwesome; content: "\f10e"; font-size: 1.25rem; color: #228B22; padding-left: .1rem; }
 
-@media screen and (min-width: 768px) { /* line 83, layout-content.scss */
+@media screen and (min-width: 768px) { /* line 89, layout-content.scss */
   .content { flex-direction: row; }
-  /* line 86, layout-content.scss */
+  /* line 92, layout-content.scss */
   #-content { flex: 1 1 auto; } }
 /* Scss Document */
 /* line 3, layout-footer.scss */
