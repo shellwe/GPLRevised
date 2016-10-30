@@ -26,7 +26,7 @@
 					<li><a href="#">Galleries</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Advice</a></li>
-					<li><a href="#">Testimonials</a></li>
+					<li><a href="testimonials.php">Testimonials</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>

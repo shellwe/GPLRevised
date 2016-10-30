@@ -11,29 +11,67 @@
 	}
 }
 .testimonials{
-	.customer-name{
-		display: inline-block;
-	}
-	.customer-rating{
-		display: inline-block;
-		.fa-star{
-			i{
-				-webkit-text-stroke: 1px #ffd700;
+	.review{
+		border-bottom: thin solid $green;
+		padding-bottom: .5rem;
+		.customer-name{
+			display: inline-block;
+			border-right: thin solid $green;
+			padding: 0 .25rem;
+		}
+		.customer-rating{
+			display: inline-block;
+			border-right: thin solid $green;
+			padding: 0 .25rem;
+			.fa-star{
+				-webkit-text-stroke: 1px rgba(255, 215, 0, 0.5);
 				color: white;
 				text-shadow:
-					3px 3px 0 #ffd700,
-					-1px -1px 0 #ffd700,  
-					1px -1px 0 #ffd700,
-					-1px 1px 0 #ffd700,
-					1px 1px 0 #ffd700;
-					display: none;
+					3px 3px 0 rgba(0, 0, 0, 0.25),
+					-1px -1px 0 rgba(255, 215, 0, 0.5),  
+					1px -1px 0 rgba(255, 215, 0, 0.5),
+					-1px 1px 0 rgba(255, 215, 0, 0.5),
+					1px 1px 0 rgba(255, 215, 0, 0.5);
 			}
-			.filled{
-				i{
-					color: #ffd700;
+				.filled{
+					color: rgba(255, 215, 0, 1);
+				}
+		}
+		.customer-source{
+			display: inline-block;
+			padding: 0 .25rem;
+			color: $green;
+			font-size: 1.5rem;
+		}
+		.customer-description{
+			padding: 1rem;
+			font-style: italic;
+			p{
+				margin: 0;
+				&:first-child{
+					&:before {
+						display: inline-block;
+						float: left;
+						font-family: FontAwesome;
+						content: "\f10d";
+						font-size: 1.25rem;
+						color: $green;
+						padding-right: .1rem;
+					}					
+				}
+				&:last-child{
+					&:after {
+						display: inline-block;
+						float: right;
+						font-family: FontAwesome;
+						content: "\f10e";
+						font-size: 1.25rem;
+						color: $green;
+						padding-left: .1rem;
+					}					
 				}
 			}
-		}
+		}		
 	}
 }
 

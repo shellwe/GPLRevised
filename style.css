@@ -534,17 +534,49 @@ h2 {
   #content #banner {
     display: none; }
 
-.testimonials .customer-name {
-  display: inline-block; }
-.testimonials .customer-rating {
-  display: inline-block; }
-  .testimonials .customer-rating .fa-star i {
-    -webkit-text-stroke: 1px #ffd700;
-    color: white;
-    text-shadow: 3px 3px 0 #ffd700, -1px -1px 0 #ffd700,   1px -1px 0 #ffd700, -1px 1px 0 #ffd700, 1px 1px 0 #ffd700;
-    display: none; }
-  .testimonials .customer-rating .fa-star .filled i {
-    color: #ffd700; }
+.testimonials .review {
+  border-bottom: thin solid #228B22;
+  padding-bottom: .5rem; }
+  .testimonials .review .customer-name {
+    display: inline-block;
+    border-right: thin solid #228B22;
+    padding: 0 .25rem; }
+  .testimonials .review .customer-rating {
+    display: inline-block;
+    border-right: thin solid #228B22;
+    padding: 0 .25rem; }
+    .testimonials .review .customer-rating .fa-star {
+      -webkit-text-stroke: 1px rgba(255, 215, 0, 0.5);
+      color: white;
+      text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25), -1px -1px 0 rgba(255, 215, 0, 0.5), 1px -1px 0 rgba(255, 215, 0, 0.5), -1px 1px 0 rgba(255, 215, 0, 0.5), 1px 1px 0 rgba(255, 215, 0, 0.5); }
+    .testimonials .review .customer-rating .filled {
+      color: gold; }
+  .testimonials .review .customer-source {
+    display: inline-block;
+    padding: 0 .25rem;
+    color: #228B22;
+    font-size: 1.5rem; }
+  .testimonials .review .customer-description {
+    padding: 1rem;
+    font-style: italic; }
+    .testimonials .review .customer-description p {
+      margin: 0; }
+      .testimonials .review .customer-description p:first-child:before {
+        display: inline-block;
+        float: left;
+        font-family: FontAwesome;
+        content: "\f10d";
+        font-size: 1.25rem;
+        color: #228B22;
+        padding-right: .1rem; }
+      .testimonials .review .customer-description p:last-child:after {
+        display: inline-block;
+        float: right;
+        font-family: FontAwesome;
+        content: "\f10e";
+        font-size: 1.25rem;
+        color: #228B22;
+        padding-left: .1rem; }
 
 @media screen and (min-width: 768px) {
   .content {
