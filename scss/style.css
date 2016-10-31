@@ -1,508 +1,64 @@
-/* Scss Document */
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-/** 1. Change the default font family in all browsers (opinionated). 2. Prevent adjustments of font size after orientation changes in IE and iOS. */
-@import "https://fonts.googleapis.com/css?family=Open+Sans|Montserrat&effect=grass";
-/* line 8, normalize.scss */
-html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
-
-/** Remove the margin in all browsers (opinionated). */
-/* line 18, normalize.scss */
-body { margin: 0; }
-
-/* HTML5 display definitions ========================================================================== */
-/** Add the correct display in IE 9-. 1. Add the correct display in Edge, IE, and Firefox. 2. Add the correct display in IE. */
-/* line 31, normalize.scss */
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary { /* 1 */ display: block; }
-
-/** Add the correct display in IE 9-. */
-/* line 50, normalize.scss */
-audio, canvas, progress, video { display: inline-block; }
-
-/** Add the correct display in iOS 4-7. */
-/* line 61, normalize.scss */
-audio:not([controls]) { display: none; height: 0; }
-
-/** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
-/* line 70, normalize.scss */
-progress { vertical-align: baseline; }
-
-/** Add the correct display in IE 10-. 1. Add the correct display in IE. */
-/* line 79, normalize.scss */
-template, [hidden] { display: none; }
-
-/* Links ========================================================================== */
-/** 1. Remove the gray background on active links in IE 10. 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
-/* line 92, normalize.scss */
-a { background-color: transparent; /* 1 */ -webkit-text-decoration-skip: objects; /* 2 */ }
-
-/** Remove the outline on focused links when they are also active or hovered in all browsers (opinionated). */
-/* line 102, normalize.scss */
-a:active, a:hover { outline-width: 0; }
-
-/* Text-level semantics ========================================================================== */
-/** 1. Remove the bottom border in Firefox 39-. 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
-/* line 115, normalize.scss */
-abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
-
-/** Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
-/* line 125, normalize.scss */
-b, strong { font-weight: inherit; }
-
-/** Add the correct font weight in Chrome, Edge, and Safari. */
-/* line 134, normalize.scss */
-b, strong { font-weight: bolder; }
-
-/** Add the correct font style in Android 4.3-. */
-/* line 143, normalize.scss */
-dfn { font-style: italic; }
-
-/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
-/* line 152, normalize.scss */
-h1 { font-size: 2em; margin: 0.67em 0; }
-
-/** Add the correct background and color in IE 9-. */
-/* line 161, normalize.scss */
-mark { background-color: #ff0; color: #000; }
-
-/** Add the correct font size in all browsers. */
-/* line 170, normalize.scss */
-small { font-size: 80%; }
-
-/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
-/* line 179, normalize.scss */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-
-/* line 187, normalize.scss */
-sub { bottom: -0.25em; }
-
-/* line 191, normalize.scss */
-sup { top: -0.5em; }
-
-/* Embedded content ========================================================================== */
-/** Remove the border on images inside links in IE 10-. */
-/* line 202, normalize.scss */
-img { border-style: none; }
-
-/** Hide the overflow in IE. */
-/* line 210, normalize.scss */
-svg:not(:root) { overflow: hidden; }
-
-/* Grouping content ========================================================================== */
-/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
-/* line 222, normalize.scss */
-code, kbd, pre, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
-
-/** Add the correct margin in IE 8. */
-/* line 234, normalize.scss */
-figure { margin: 1em 40px; }
-
-/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
-/* line 243, normalize.scss */
-hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
-
-/* Forms ========================================================================== */
-/** 1. Change font properties to `inherit` in all browsers (opinionated). 2. Remove the margin in Firefox and Safari. */
-/* line 257, normalize.scss */
-button, input, select, textarea { font: inherit; /* 1 */ margin: 0; /* 2 */ }
-
-/** Restore the font weight unset by the previous rule. */
-/* line 269, normalize.scss */
-optgroup { font-weight: bold; }
-
-/** Show the overflow in IE. 1. Show the overflow in Edge. */
-/* line 278, normalize.scss */
-button, input { /* 1 */ overflow: visible; }
-
-/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
-/* line 288, normalize.scss */
-button, select { /* 1 */ text-transform: none; }
-
-/** 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4. 2. Correct the inability to style clickable types in iOS and Safari. */
-/* line 299, normalize.scss */
-button, html [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; /* 2 */ }
-
-/** Remove the inner border and padding in Firefox. */
-/* line 310, normalize.scss */
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
-
-/** Restore the focus styles unset by the previous rule. */
-/* line 322, normalize.scss */
-button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
-
-/** Change the border, margin, and padding in all browsers (opinionated). */
-/* line 333, normalize.scss */
-fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
-
-/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
-/* line 346, normalize.scss */
-legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
-
-/** Remove the default vertical scrollbar in IE. */
-/* line 359, normalize.scss */
-textarea { overflow: auto; }
-
-/** 1. Add the correct box sizing in IE 10-. 2. Remove the padding in IE 10-. */
-/* line 368, normalize.scss */
-[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
-
-/** Correct the cursor style of increment and decrement buttons in Chrome. */
-/* line 378, normalize.scss */
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
-
-/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
-/* line 388, normalize.scss */
-[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
-
-/** Remove the inner padding and cancel buttons in Chrome and Safari on OS X. */
-/* line 397, normalize.scss */
-[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-
-/** Correct the text style of placeholders in Chrome, Edge, and Safari. */
-/* line 406, normalize.scss */
-::-webkit-input-placeholder { color: inherit; opacity: 0.54; }
-
-/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
-/* line 416, normalize.scss */
-::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
-
-/* Scss Document */
-/* line 6, typography.scss */
-body { font-family: 'Open Sans', sans-serif; color: #371110; }
-
-/* line 12, typography.scss */
-h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; color: #228B22; }
-
-/* line 22, typography.scss */
-h1 { font-size: 1.5rem; }
-
-/* line 26, typography.scss */
-h2 { margin: .5rem 0; font-size: 1.25rem; }
-
-/* Use the following CSS code if you want to have a class per icon */
-/* line 35, typography.scss */
-.content ul { padding-left: 20px; list-style: none; }
-/* line 38, typography.scss */
-.content ul li { margin-bottom: 10px; }
-/* line 40, typography.scss */
-.content ul li:before { font-family: 'FontAwesome'; content: '\f06c'; margin: 0 5px 0 -15px; color: #228B22; }
-
-/* Scss Document */
-/* line 2, layout.scss */
-body { background-color: white; }
-
-/* line 5, layout.scss */
-#capsule { display: flex; flex-direction: column; padding-top: .5rem; }
-
-/* line 11, layout.scss */
-#header, #content, #footer { width: auto; margin: 0 auto; }
-
-/* line 18, layout.scss */
-.container { width: auto; margin: auto; max-width: 1200px; }
-
-@media screen and (min-width: 768px) { /* line 28, layout.scss */
-  #header, #content, #footer { min-width: 768px; width: 100%; } }
-/* Styles for Single Level Menu */
-/* line 5, layout-header.scss */
-#header .logo img { width: 100%; height: auto; }
-/* line 10, layout-header.scss */
-#header #header-icons-mobile { display: none; }
-/* line 13, layout-header.scss */
-#header .main-navigation { /* Base styles that apply to all menus */ }
-/* line 15, layout-header.scss */
-#header .main-navigation ul { list-style-type: none; padding: 0; margin: 0; font-size: .95rem; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
-/* line 25, layout-header.scss */
-#header .main-navigation ul li a { border-top: thin solid #CCC; border-bottom: thin solid #CCC; display: block; text-decoration: none; color: #228B22; padding: .3rem 0; text-align: center; }
-/* line 33, layout-header.scss */
-#header .main-navigation ul li a:before { display: inline-block; font-family: FontAwesome; content: "\00a0 \f06c"; transform: rotateY(180deg); opacity: 0; transition: opacity 1s ease; }
-/* line 41, layout-header.scss */
-#header .main-navigation ul li a:after { display: inline-block; font-family: FontAwesome; content: "\00a0 \f06c"; opacity: 0; transition: opacity 1s ease; }
-/* line 48, layout-header.scss */
-#header .main-navigation ul li a:hover { border-top: thin solid #228B22; border-bottom: thin solid #228B22; }
-/* line 51, layout-header.scss */
-#header .main-navigation ul li a:hover:after { opacity: .8; transition: opacity 1s ease; }
-/* line 55, layout-header.scss */
-#header .main-navigation ul li a:hover:before { opacity: .8; transition: opacity 1s ease; }
-
-@media screen and (max-width: 767px) { /* line 68, layout-header.scss */
-  #header .logo { display: inline-block; width: 50%; }
-  /* line 72, layout-header.scss */
-  #header #header-icons-mobile { display: inline-block; margin-left: auto; float: right; font-size: 2rem; color: #228B22; }
-  /* line 78, layout-header.scss */
-  #header #header-icons-mobile i { padding: .75rem; }
-  /* line 81, layout-header.scss */
-  #header #header-icons-mobile a { color: #228B22; }
-  /* line 85, layout-header.scss */
-  #header .main-navigation { clear: both; }
-  /* line 88, layout-header.scss */
-  #header .main-navigation .mobile-search .search-submit { font-family: FontAwesome; }
-  /* line 93, layout-header.scss */
-  #header .main-navigation ul li { width: 50%; }
-  /* line 95, layout-header.scss */
-  #header .main-navigation ul li a { font-size: 1.2rem; border: thin solid #CCC; padding: .5rem 0; }
-  /* line 99, layout-header.scss */
-  #header .main-navigation ul li a:before { opacity: .8; }
-  /* line 102, layout-header.scss */
-  #header .main-navigation ul li a:after { opacity: .8; }
-  /* line 109, layout-header.scss */
-  #header .toggle-menu { display: none; } }
-@media screen and (min-width: 768px) { /* line 117, layout-header.scss */
-  #header .logo { margin: auto; width: 25%; padding: .25rem; }
-  /* line 122, layout-header.scss */
-  #header #header-icons-mobile { display: none; }
-  /* line 127, layout-header.scss */
-  #header .main-navigation ul li { flex: 1 0 auto; text-align: center; } }
-@media screen and (min-width: 1200px) { /* line 137, layout-header.scss */
-  #header { display: flex; flex-direction: row; justify-content: space-between; align-content: center; }
-  /* line 142, layout-header.scss */
-  #header .logo { flex: 1 1 300px; padding-right: 25px; }
-  /* line 146, layout-header.scss */
-  #header .main-navigation { flex: 1 1 900px; align-self: center; }
-  /* line 149, layout-header.scss */
-  #header .main-navigation ul { font-size: 1rem; } }
-/* Scss Document 
-*/
-/* line 3, layout-content.scss */
-#content { display: flex; flex-direction: column; padding: 1rem; margin-top: .5rem; }
-/* line 9, layout-content.scss */
-#content #banner img { width: 100%; height: auto; }
-
-/* line 23, layout-content.scss */
-.testimonials .review { border-bottom: thin solid #A0420D; padding: 2rem 0; }
-/* line 26, layout-content.scss */
-.testimonials .review .customer-name { display: inline-block; border-right: thin solid #228B22; padding: 0 .25rem; font-weight: bold; }
-/* line 32, layout-content.scss */
-.testimonials .review .customer-rating { display: inline-block; border-right: thin solid #228B22; padding: 0 1rem; }
-/* line 36, layout-content.scss */
-.testimonials .review .customer-rating .fa-star { -webkit-text-stroke: 1px rgba(255, 215, 0, 0.5); color: white; text-shadow: -1px -1px 0 rgba(255, 215, 0, 0.5), 1px -1px 0 rgba(255, 215, 0, 0.5), -1px 1px 0 rgba(255, 215, 0, 0.5), 1px 1px 0 rgba(255, 215, 0, 0.5); }
-/* line 46, layout-content.scss */
-.testimonials .review .customer-rating .filled { color: gold; }
-/* line 50, layout-content.scss */
-.testimonials .review .customer-source { display: inline-block; padding: 0 .25rem; color: #228B22; font-size: 1.5rem; }
-/* line 56, layout-content.scss */
-.testimonials .review .customer-description { padding: 2rem; font-style: italic; }
-/* line 59, layout-content.scss */
-.testimonials .review .customer-description p { margin: 0; }
-/* line 62, layout-content.scss */
-.testimonials .review .customer-description p:first-child:before { display: inline-block; float: left; font-family: FontAwesome; content: "\f10d"; font-size: 1.25rem; color: #228B22; padding-right: 1rem; }
-/* line 73, layout-content.scss */
-.testimonials .review .customer-description p:last-child:after { display: inline-block; float: right; font-family: FontAwesome; content: "\f10e"; font-size: 1.25rem; color: #228B22; padding-left: 1rem; }
-
-@media screen and (min-width: 768px) { /* line 89, layout-content.scss */
-  .content { flex-direction: row; }
-  /* line 92, layout-content.scss */
-  #-content { flex: 1 1 auto; } }
-/* Scss Document */
-/* line 3, layout-footer.scss */
-#footer { border-top: #228B22 medium inset; background-color: #228B22; color: white; font-size: 2rem; }
-/* line 8, layout-footer.scss */
-#footer .fa { padding: .5rem; }
-/* line 11, layout-footer.scss */
-#footer a { color: white; text-shadow: 2px 2px 4px black; text-decoration: none; }
-/* line 16, layout-footer.scss */
-#footer .telephone { float: left; }
-/* line 19, layout-footer.scss */
-#footer .social-media { text-align: right; }
-
-@media screen and (max-width: 767px) { /* line 25, layout-footer.scss */
-  #footer .social-media, #footer .telephone { text-align: center; display: inline-block; } }
-/* Scss Document */
-/* line 1, elements-cards.scss */
-.card { background: white; margin-bottom: 2em; }
-/* line 4, elements-cards.scss */
-.card a { color: black; text-decoration: none; }
-/* line 8, elements-cards.scss */
-.card a:hover { box-shadow: 3px 3px 8px #b3b3b3; }
-/* line 11, elements-cards.scss */
-.card .card-content { padding: 1.4em; }
-/* line 13, elements-cards.scss */
-.card .card-content h2 { margin-top: 0; margin-bottom: .5em; font-weight: normal; }
-/* line 18, elements-cards.scss */
-.card .card-content p { font-size: 95%; }
-
-/* Flexbox stuff */
-@media screen and (min-width: 768px) { /* line 28, elements-cards.scss */
-  .cards { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: -1em; }
-  /* line 34, elements-cards.scss */
-  .card { display: flex; flex: 0 1 calc(50% - .5em); margin-bottom: 1em; } }
-@media screen and (min-width: 60em) { /* line 42, elements-cards.scss */
-  .cards { margin-top: inherit; }
-  /* line 45, elements-cards.scss */
-  .card { flex: 0 1 calc(33% - 1em); margin-bottom: 2em; } }
-/* Sliding carousel on homepage */
-/* line 22, carousel/_variables.scss */
-.gallery .control-operator:target ~ .controls .control-button, .gallery .control-button { color: #ccc; color: rgba(255, 255, 255, 0.4); }
-
-/* line 26, carousel/_variables.scss */
-.gallery .control-button:first-of-type, .gallery .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .gallery .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .gallery .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .gallery .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4), .gallery .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5), .gallery .control-button:hover { color: white; color: rgba(255, 255, 255, 0.8); }
-
-/* line 45, carousel/_gallery.scss */
-.gallery .item:first-of-type { position: static; pointer-events: auto; opacity: 1; }
-/* line 46, carousel/_gallery.scss */
-.gallery .item { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0; transition: opacity .5s; }
-/* line 48, carousel/_gallery.scss */
-.gallery .control-operator { display: none; }
-/* line 50, carousel/_gallery.scss */
-.gallery .control-operator:target ~ .item { pointer-events: none; opacity: 0; animation: none; }
-/* line 53, carousel/_gallery.scss */
-.gallery .control-operator:target ~ .controls .control-button { animation: none; }
-
-/* line 22, carousel/_variables.scss */
-.gallery .control-operator:target ~ .controls .control-button, .gallery .control-button { color: #ccc; color: rgba(255, 255, 255, 0.4); }
-
-/* line 26, carousel/_variables.scss */
-.gallery .control-button:first-of-type, .gallery .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .gallery .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .gallery .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .gallery .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4), .gallery .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5), .gallery .control-button:hover { color: white; color: rgba(255, 255, 255, 0.8); }
-
-/* line 22, carousel/_variables.scss */
-.gallery .control-operator:target ~ .controls .control-button, .gallery .control-button { color: #ccc; color: rgba(255, 255, 255, 0.4); }
-
-/* line 26, carousel/_variables.scss */
-.gallery .control-button:first-of-type, .gallery .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .gallery .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .gallery .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .gallery .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4), .gallery .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5), .gallery .control-button:hover { color: white; color: rgba(255, 255, 255, 0.8); }
-
-/* line 45, carousel/_gallery.scss */
-.gallery .item:first-of-type { position: static; pointer-events: auto; opacity: 1; }
-/* line 46, carousel/_gallery.scss */
-.gallery .item { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0; transition: opacity .5s; }
-/* line 48, carousel/_gallery.scss */
-.gallery .control-operator { display: none; }
-/* line 50, carousel/_gallery.scss */
-.gallery .control-operator:target ~ .item { pointer-events: none; opacity: 0; animation: none; }
-/* line 53, carousel/_gallery.scss */
-.gallery .control-operator:target ~ .controls .control-button { animation: none; }
-
-@keyframes controlAnimation-2 { 0% { color: #ccc; color: rgba(255, 255, 255, 0.4); }
-  14.28571%,
-	  50% { color: white; color: rgba(255, 255, 255, 0.8); }
-  64.28571%,
-	  100% { color: #ccc; color: rgba(255, 255, 255, 0.4); } }
-@keyframes galleryAnimation-2 { 0% { opacity: 0; }
-  14.28571%,
-	  50% { opacity: 1; }
-  64.28571%,
-	  100% { opacity: 0; } }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) { pointer-events: auto; opacity: 1; }
-
-/* line 30, carousel/_gallery.scss */
-.items-2.autoplay .control-button { animation: controlAnimation-2 14s infinite; }
-/* line 31, carousel/_gallery.scss */
-.items-2.autoplay .item { animation: galleryAnimation-2 14s infinite; }
-/* line 34, carousel/_gallery.scss */
-.items-2 .control-button:nth-of-type(1), .items-2 .item:nth-of-type(1) { animation-delay: -2s; }
-/* line 34, carousel/_gallery.scss */
-.items-2 .control-button:nth-of-type(2), .items-2 .item:nth-of-type(2) { animation-delay: 5s; }
-
-@keyframes controlAnimation-3 { 0% { color: #ccc; color: rgba(255, 255, 255, 0.4); }
-  9.52381%,
-	  33.33333% { color: white; color: rgba(255, 255, 255, 0.8); }
-  42.85714%,
-	  100% { color: #ccc; color: rgba(255, 255, 255, 0.4); } }
-@keyframes galleryAnimation-3 { 0% { opacity: 0; }
-  9.52381%,
-	  33.33333% { opacity: 1; }
-  42.85714%,
-	  100% { opacity: 0; } }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) { pointer-events: auto; opacity: 1; }
-
-/* line 30, carousel/_gallery.scss */
-.items-3.autoplay .control-button { animation: controlAnimation-3 21s infinite; }
-/* line 31, carousel/_gallery.scss */
-.items-3.autoplay .item { animation: galleryAnimation-3 21s infinite; }
-/* line 34, carousel/_gallery.scss */
-.items-3 .control-button:nth-of-type(1), .items-3 .item:nth-of-type(1) { animation-delay: -2s; }
-/* line 34, carousel/_gallery.scss */
-.items-3 .control-button:nth-of-type(2), .items-3 .item:nth-of-type(2) { animation-delay: 5s; }
-/* line 34, carousel/_gallery.scss */
-.items-3 .control-button:nth-of-type(3), .items-3 .item:nth-of-type(3) { animation-delay: 12s; }
-
-@keyframes controlAnimation-4 { 0% { color: #ccc; color: rgba(255, 255, 255, 0.4); }
-  7.14286%,
-	  25% { color: white; color: rgba(255, 255, 255, 0.8); }
-  32.14286%,
-	  100% { color: #ccc; color: rgba(255, 255, 255, 0.4); } }
-@keyframes galleryAnimation-4 { 0% { opacity: 0; }
-  7.14286%,
-	  25% { opacity: 1; }
-  32.14286%,
-	  100% { opacity: 0; } }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) { pointer-events: auto; opacity: 1; }
-
-/* line 30, carousel/_gallery.scss */
-.items-4.autoplay .control-button { animation: controlAnimation-4 28s infinite; }
-/* line 31, carousel/_gallery.scss */
-.items-4.autoplay .item { animation: galleryAnimation-4 28s infinite; }
-/* line 34, carousel/_gallery.scss */
-.items-4 .control-button:nth-of-type(1), .items-4 .item:nth-of-type(1) { animation-delay: -2s; }
-/* line 34, carousel/_gallery.scss */
-.items-4 .control-button:nth-of-type(2), .items-4 .item:nth-of-type(2) { animation-delay: 5s; }
-/* line 34, carousel/_gallery.scss */
-.items-4 .control-button:nth-of-type(3), .items-4 .item:nth-of-type(3) { animation-delay: 12s; }
-/* line 34, carousel/_gallery.scss */
-.items-4 .control-button:nth-of-type(4), .items-4 .item:nth-of-type(4) { animation-delay: 19s; }
-
-@keyframes controlAnimation-5 { 0% { color: #ccc; color: rgba(255, 255, 255, 0.4); }
-  5.71429%,
-	  20% { color: white; color: rgba(255, 255, 255, 0.8); }
-  25.71429%,
-	  100% { color: #ccc; color: rgba(255, 255, 255, 0.4); } }
-@keyframes galleryAnimation-5 { 0% { opacity: 0; }
-  5.71429%,
-	  20% { opacity: 1; }
-  25.71429%,
-	  100% { opacity: 0; } }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) { pointer-events: auto; opacity: 1; }
-/* line 24, carousel/_gallery.scss */
-.gallery .control-operator:nth-of-type(5):target ~ .item:nth-of-type(5) { pointer-events: auto; opacity: 1; }
-
-/* line 30, carousel/_gallery.scss */
-.items-5.autoplay .control-button { animation: controlAnimation-5 35s infinite; }
-/* line 31, carousel/_gallery.scss */
-.items-5.autoplay .item { animation: galleryAnimation-5 35s infinite; }
-/* line 34, carousel/_gallery.scss */
-.items-5 .control-button:nth-of-type(1), .items-5 .item:nth-of-type(1) { animation-delay: -2s; }
-/* line 34, carousel/_gallery.scss */
-.items-5 .control-button:nth-of-type(2), .items-5 .item:nth-of-type(2) { animation-delay: 5s; }
-/* line 34, carousel/_gallery.scss */
-.items-5 .control-button:nth-of-type(3), .items-5 .item:nth-of-type(3) { animation-delay: 12s; }
-/* line 34, carousel/_gallery.scss */
-.items-5 .control-button:nth-of-type(4), .items-5 .item:nth-of-type(4) { animation-delay: 19s; }
-/* line 34, carousel/_gallery.scss */
-.items-5 .control-button:nth-of-type(5), .items-5 .item:nth-of-type(5) { animation-delay: 26s; }
-
-/* line 22, carousel/_variables.scss */
-.gallery .control-operator:target ~ .controls .control-button, .gallery .control-button { color: #ccc; color: rgba(255, 255, 255, 0.4); }
-
-/* line 26, carousel/_variables.scss */
-.gallery .control-button:first-of-type, .gallery .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .gallery .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .gallery .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .gallery .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4), .gallery .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5), .gallery .control-button:hover { color: white; color: rgba(255, 255, 255, 0.8); }
-
 /*
-	Theme controls how everything looks in Gallery CSS.
+Error: Invalid CSS after "			width:100%": expected "{", was ";"
+        on line 10 of /Applications/MAMP/htdocs/GPLRevised/scss/elements.scss
+        from line 6 of /Applications/MAMP/htdocs/GPLRevised/scss/style.scss
+
+5: /* Sliding carousel on homepage *\/
+6: //@import "carousel/gallery";
+7: //@import "carousel/variables";
+8: //@import "carousel/gallery.build";
+9: //@import "carousel/gallery.theme";
+10: 			width:100%;
+11: 			height: auto;
+
+Backtrace:
+/Applications/MAMP/htdocs/GPLRevised/scss/elements.scss:10
+/Applications/MAMP/htdocs/GPLRevised/scss/style.scss:6
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/scss/parser.rb:637:in `block'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/scss/parser.rb:631:in `ruleset'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/engine.rb:309:in `to_tree'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:88:in `with_import'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:420:in `run'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/rubygems/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/bin/sass:30:in `load'
+/Applications/Adobe Dreamweaver CC (2017 Beta)/Dreamweaver Beta.app/Contents/Resources/gems/bin/sass:30:in `<main>'
 */
-/* line 7, carousel/gallery.theme.scss */
-.gallery { position: relative; }
-/* line 10, carousel/gallery.theme.scss */
-.gallery .item { height: 400px; overflow: hidden; text-align: center; background: #4d87e2; }
-/* line 11, carousel/gallery.theme.scss */
-.gallery .controls { position: absolute; bottom: 0; width: 100%; text-align: center; }
-/* line 13, carousel/gallery.theme.scss */
-.gallery .control-button { display: inline-block; margin: 0 .02em; font-size: 3em; text-align: center; text-decoration: none; transition: color .1s; }
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"			width:100%\": expected \"{\", was \";\"\A         on line 10 of /Applications/MAMP/htdocs/GPLRevised/scss/elements.scss\A         from line 6 of /Applications/MAMP/htdocs/GPLRevised/scss/style.scss\A \A 5: /* Sliding carousel on homepage */\A 6: //@import \"carousel/gallery\";\A 7: //@import \"carousel/variables\";\A 8: //@import \"carousel/gallery.build\";\A 9: //@import \"carousel/gallery.theme\";\A 10: 			width:100%;\A 11: 			height: auto;"; }
