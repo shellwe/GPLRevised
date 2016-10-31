@@ -1,7 +1,7 @@
 		<?php include 'header.php'; ?>
 		<div id="content" class="testimonials">
 			<div class="container">
-				<div id="banner">
+				<div id="banner" class="responsive">
 					<img src="images/banner.jpg" alt="banner"/>
 				</div>
 				<p>At Great Plains Landscaping we feel that our services speaks for itself. Below are some reviews we got from our valuable customers. bla</p>
