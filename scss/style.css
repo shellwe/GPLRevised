@@ -187,16 +187,19 @@ h2 { margin: .5rem 0; font-size: 1.25rem; }
 .content ul li:before { font-family: 'FontAwesome'; content: '\f06c'; margin: 0 5px 0 -15px; color: #228B22; }
 
 /* Scss Document */
-/* line 3, layout.scss */
+/* line 2, layout.scss */
+body { background-color: white; }
+
+/* line 5, layout.scss */
 #capsule { display: flex; flex-direction: column; padding-top: .5rem; }
 
-/* line 9, layout.scss */
+/* line 11, layout.scss */
 #header, #content, #footer { width: auto; margin: 0 auto; }
 
-/* line 16, layout.scss */
+/* line 18, layout.scss */
 .container { width: auto; margin: auto; max-width: 1200px; }
 
-@media screen and (min-width: 768px) { /* line 26, layout.scss */
+@media screen and (min-width: 768px) { /* line 28, layout.scss */
   #header, #content, #footer { min-width: 768px; width: 100%; } }
 /* Styles for Single Level Menu */
 /* line 5, layout-header.scss */
@@ -270,7 +273,7 @@ h2 { margin: .5rem 0; font-size: 1.25rem; }
 /* line 32, layout-content.scss */
 .testimonials .review .customer-rating { display: inline-block; border-right: thin solid #228B22; padding: 0 1rem; }
 /* line 36, layout-content.scss */
-.testimonials .review .customer-rating .fa-star { -webkit-text-stroke: 1px rgba(255, 215, 0, 0.5); color: white; text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25), -1px -1px 0 rgba(255, 215, 0, 0.5), 1px -1px 0 rgba(255, 215, 0, 0.5), -1px 1px 0 rgba(255, 215, 0, 0.5), 1px 1px 0 rgba(255, 215, 0, 0.5); }
+.testimonials .review .customer-rating .fa-star { -webkit-text-stroke: 1px rgba(255, 215, 0, 0.5); color: white; text-shadow: -1px -1px 0 rgba(255, 215, 0, 0.5), 1px -1px 0 rgba(255, 215, 0, 0.5), -1px 1px 0 rgba(255, 215, 0, 0.5), 1px 1px 0 rgba(255, 215, 0, 0.5); }
 /* line 46, layout-content.scss */
 .testimonials .review .customer-rating .filled { color: gold; }
 /* line 50, layout-content.scss */
@@ -280,9 +283,9 @@ h2 { margin: .5rem 0; font-size: 1.25rem; }
 /* line 59, layout-content.scss */
 .testimonials .review .customer-description p { margin: 0; }
 /* line 62, layout-content.scss */
-.testimonials .review .customer-description p:first-child:before { display: inline-block; float: left; font-family: FontAwesome; content: "\f10d"; font-size: 1.25rem; color: #228B22; padding-right: .1rem; }
+.testimonials .review .customer-description p:first-child:before { display: inline-block; float: left; font-family: FontAwesome; content: "\f10d"; font-size: 1.25rem; color: #228B22; padding-right: 1rem; }
 /* line 73, layout-content.scss */
-.testimonials .review .customer-description p:last-child:after { display: inline-block; float: right; font-family: FontAwesome; content: "\f10e"; font-size: 1.25rem; color: #228B22; padding-left: .1rem; }
+.testimonials .review .customer-description p:last-child:after { display: inline-block; float: right; font-family: FontAwesome; content: "\f10e"; font-size: 1.25rem; color: #228B22; padding-left: 1rem; }
 
 @media screen and (min-width: 768px) { /* line 89, layout-content.scss */
   .content { flex-direction: row; }

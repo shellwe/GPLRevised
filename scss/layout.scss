@@ -1,5 +1,7 @@
 /* Scss Document */
-
+body{
+	background-color: lighten($yellow, 75%);
+}
 #capsule {
 	display: flex;
 	flex-direction: column;
