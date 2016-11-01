@@ -1,11 +1,9 @@
 /* Scss Document */
-body{
-	background-color: lighten($yellow, 75%);
-}
 #capsule {
 	display: flex;
 	flex-direction: column;
 	padding-top: .5rem;
+	background-color: lighten($yellow, 75%);
 }
 
 #header,
@@ -22,6 +20,10 @@ body{
 }
 
 @media screen and (max-width: $mobile-viewport) {
+	.container {
+		padding: .5rem;
+		margiin: 0 -.5rem;
+	}
 }
 
 @media screen and (min-width: $desktop-viewport) {
