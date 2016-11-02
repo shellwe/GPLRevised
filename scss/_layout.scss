@@ -1,18 +1,22 @@
 /* Scss Document */
 *{
-	box-sizing border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: lighten($yellow, 65%);
 }
 #capsule {
 	display: flex;
 	flex-direction: column;
 	padding-top: .5rem;
-	background-color: lighten($yellow, 75%);
+	overflow-x: hidden;
 }
 
 #header,
 #content,
 #footer {
-	width: auto;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -22,10 +26,15 @@
 	max-width: $max-desktop-viewport;
 }
 
+//#banner{
+//	width: auto;
+//	margin: auto;
+//	max-width: $max-desktop-viewport;
+//}
+
 @media screen and (max-width: $mobile-viewport) {
 	.container {
-		padding: .5rem;
-		margin: 0 -.5rem;
+
 	}
 }
 

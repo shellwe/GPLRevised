@@ -3,17 +3,18 @@
 #content {
 	display: flex;
 	flex-direction: column;
-	margin-top: .5rem;
+	padding: .5rem;
 	#banner{
+		margin: 0 -.5rem;
 	}
 }
 @media screen and (min-width: $desktop-viewport) {
-#content {
-	#banner{	
+	#content {
+		#banner{	
 			//margin: 0 -1rem;
 		}
 	}
-}
+}	
 .testimonials{
 	.review{
 		border-bottom: thin solid $red;

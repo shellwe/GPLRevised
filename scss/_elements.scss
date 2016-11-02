@@ -7,5 +7,9 @@
 //@import "carousel/variables";
 //@import "carousel/gallery.build";
 //@import "carousel/gallery.theme";
-			width:100%;
-			height: auto;
+.responsive{
+	img{
+		width:100%;
+		height: auto;	
+	}
+}
