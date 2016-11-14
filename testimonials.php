@@ -60,7 +60,7 @@
 					<div class="customer-description">
 						<p>Marcus is very friendly as well as concerned about making sure he is doing a good job.  I found him as being easy to reach and he was always good about returning my calls.  His crew was similarly friendly and hardworking.</p>
 						<p>The work that Marcus and crew did was first rate.</p>
-						<p>We will continue to use Marcus and Great Plains Landscaping to do the projects that we aren't capable of  accomplishing.</p>
+						<p>We will continue to use Marcus and Great Plains Landscaping to do the projects that we aren't capable of accomplishing.</p>
 					</div>
 				</div>
 				<div class="review">
