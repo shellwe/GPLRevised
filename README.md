@@ -1,38 +1,45 @@
-# GPLRevised Notes
+[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
-http://themedemos.dottoro.com/features/menu/horizontal-submenu/
+_s
+===
 
-Use this for mobile font
-https://css-tricks.com/viewport-sized-typography/
+Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
-Alternatively, you could just add a minimum width to the a tag in mobile so if it goes below a certain size it will wrap around to 1 wide.
+My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
 
-Yes another idea for the toggle to work:
-http://stackoverflow.com/questions/28101797/jquery-slidetoggle-with-css-media-query
+* A just right amount of lean, well-commented, modern, HTML5 templates.
+* A helpful 404 template.
+* A custom header implementation in `inc/custom-header.php` just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
+* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
+* Some small tweaks in `inc/extras.php` that can improve your theming experience.
+* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
+* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
+* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
+* Licensed under GPLv2 or later. :) Use it to make something cool.
 
-adding in code to do check for mobile:
-http://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
-Be sure to wrap it in an isMobile exits if statement so it doesn't get called on every page load
-if (null == isMobile)
+Getting Started
+---------------
 
-Maybe use this for search? I like how it expands to fill space, which I would want to set a max width for the div
-http://tympanus.net/Tutorials/ExpandingSearchBar/
+If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
 
-Here is info on how to style a search bar (uses font awesome)
-https://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069
+If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
 
-//Use this to get google analytics
+1. Search for `'_s'` (inside single quotations) to capture the text domain.
+2. Search for `_s_` to capture all the function names.
+3. Search for `Text Domain: _s` in style.css.
+4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
+5. Search for `_s-` to capture prefixed handles.
 
-function google_analytics() { ?>
-  // Paste your own Google Analytics snippet below
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+OR
 
-    ga('create', 'UA-XXXXXXXX-XX', 'auto');
-    ga('send', 'pageview');
-  </script>
-<?php }
-add_action( 'wp_head', 'google_analytics', 10 );
+* Search for: `'_s'` and replace with: `'megatherium'`
+* Search for: `_s_` and replace with: `megatherium_`
+* Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
+* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
+* Search for: `_s-` and replace with: `megatherium-`
+
+Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
+
+Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+
+Good luck!

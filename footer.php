@@ -1,17 +1,28 @@
-		<footer id="footer">
-			<div class="container">
-					<a class="telephone" href="tel:402-417-6906"><i class="fa fa-phone" aria-hidden="true"></i> 402-417-6906</a>
-				<div class="social-media">
-					<a href="https://www.facebook.com/GreatPlainsLandscaping" target="new"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-					<a href="https://www.pinterest.com/greatplainsland/" target="new"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>					<a href="https://plus.google.com/107837644911414833271/" target="new"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-					<a href="http://www.yelp.com/biz/great-plains-landscapes-lincoln"><i class="fa fa-yelp" aria-hidden="true"></i></a>
-					<a href="a"><i class="fa fa-envelope" aria-hidden="true"></i></a> </div>
-			</div>
-		</footer>
-	</div>
-	<!-- jQuery first, then Tether, then Bootstrap JS. -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/scripts.js"></script>
-</body>
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package GPLRevised
+ */
 
+?>
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gplrevised' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'gplrevised' ), 'WordPress' ); ?></a>
+			<span class="sep"> | </span>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'gplrevised' ), 'gplrevised', '<a href="http://shawnwow.com/" rel="designer">Shawn Hellwege</a>' ); ?>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<?php wp_footer(); ?>
+
+</body>
 </html>
